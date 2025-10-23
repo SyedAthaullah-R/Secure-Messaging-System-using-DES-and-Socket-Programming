@@ -1,0 +1,11 @@
+# Use Java 21 JDK slim image
+FROM openjdk:21-jdk-slim
+
+# Set working directory inside container
+WORKDIR /app
+
+# Copy the client JAR into the container
+COPY target/SecureClient.jar /app/SecureClient.jar
+
+# Command to run the client
+CMD ["java", "-jar", "SecureClient.jar"]

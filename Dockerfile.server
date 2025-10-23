@@ -1,0 +1,5 @@
+FROM openjdk:21-jdk-slim
+WORKDIR /app
+COPY target/SecureServer.jar /app/SecureServer.jar
+EXPOSE 8000
+CMD ["java", "-jar", "SecureServer.jar"]

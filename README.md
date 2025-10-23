@@ -1,1 +1,5 @@
 # Secure-Messaging-System-using-DES-and-Socket-Programming
+This project presents a secure communication platform based on the DES (Data Encryption Standard) algorithm, enabling encrypted message exchange between a client and a server through Java socket programming. The server performs an authentication mechanism to validate the client before granting access. Upon successful authentication, a DES secret key is generated and securely transmitted to the client, establishing a trusted communication channel.
+
+Messages exchanged between the client and server are encrypted using DES, ensuring that data remains confidential and protected from eavesdropping. The system is fully containerized using Docker, with both the client and server running in separate containers connected via a virtual Docker network. This approach enhances portability, simplifies deployment, and allows seamless communication across different environments.
+The DES Secure Messaging System effectively demonstrates how classical symmetric encryption can be integrated with modern containerization tools to achieve secure and manageable network communication.
